@@ -1,6 +1,6 @@
 var parasiteData = require("./parasites.js");
 
-var hostArray = [
+var hostData = [
     {
         "name": "Hilda",
         "photo": "https://unsplash.com/photos/V_xncvgzDoo",
@@ -16,8 +16,8 @@ var hostArray = [
             2,
             2
         ],
-        "match": parasiteArray[2].name,
-        "testimonial": `I don't really like surprises, so I wanted a mild parasite that would stick with me without disrupting my life too much. ${parasiteArray[2].name} gave me just that. I'm getting dewormed soon, so we might not go the distance, but this has been not terrible. Thanks, ParasiteFinder!`
+        "match": parasiteData[2].name,
+        "testimonial": `I don't really like surprises, so I wanted a mild parasite that would stick with me without disrupting my life too much. ${parasiteData[2].name} gave me just that. I'm getting dewormed soon, so we might not go the distance, but this has been not terrible. Thanks, ParasiteFinder!`
     }
 ]
 

@@ -1,7 +1,7 @@
 //Require objects from parasites.js
 
-var parasiteData = require("../app/data/parasites.js");
-var hostData = require("../app/data/hosts.js");
+var parasiteData = require("../data/parasites.js");
+var hostData = require("../data/hosts.js");
 
 module.exports = function(app) {
 

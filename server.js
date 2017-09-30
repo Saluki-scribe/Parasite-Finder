@@ -14,6 +14,7 @@ app.use(bodyParser.json());
 
 //Add exported routes for htmlRoutes and apiRoutes
 
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 
