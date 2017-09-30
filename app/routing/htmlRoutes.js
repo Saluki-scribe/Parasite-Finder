@@ -7,7 +7,7 @@ module.exports = function(app) {
     //Routes displaying home page and survey page for user request
 
     app.get("/survey", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/survey.html"))
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
     app.get("*", function (req, res) {
