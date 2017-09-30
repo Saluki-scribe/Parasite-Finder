@@ -28,7 +28,7 @@ var parasiteArray = [
             4,
             5,
             5,
-            4
+            1
 
         ]
     },
@@ -61,7 +61,7 @@ var parasiteArray = [
             5,
             5,
             2,
-            5
+            2
         ]
     },
     {
