@@ -1,3 +1,5 @@
+var parasiteData = require("./parasites.js");
+
 var hostArray = [
     {
         "name": "Hilda",
@@ -18,3 +20,5 @@ var hostArray = [
         "testimonial": `I don't really like surprises, so I wanted a mild parasite that would stick with me without disrupting my life too much. ${parasiteArray[2].name} gave me just that. I'm getting dewormed soon, so we might not go the distance, but this has been not terrible. Thanks, ParasiteFinder!`
     }
 ]
+
+module.exports = hostData;

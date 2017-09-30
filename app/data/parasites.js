@@ -82,4 +82,4 @@ var parasiteArray = [
     }
 ]
 
-module.exports = parasiteArray;
+module.exports = parasiteData;
