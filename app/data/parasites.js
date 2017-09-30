@@ -1,4 +1,4 @@
-var parasiteArray = [
+var parasiteData = [
     {
         "name": "Human Botfly",
         "photo": "",
@@ -81,3 +81,5 @@ var parasiteArray = [
         ]
     }
 ]
+
+module.exports = parasiteData;
