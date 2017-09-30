@@ -81,3 +81,5 @@ var parasiteArray = [
         ]
     }
 ]
+
+module.exports = parasiteArray;
