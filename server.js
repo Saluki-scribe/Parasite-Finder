@@ -11,7 +11,7 @@ var PORT = 8080;
 
 app.use(function(req, res, next) {
 
-    console.log(`${req.method} request for '${req.url}'`);
+    console.log(`${req.method} request for '${req.url}' -${JSON.stringify(req.body)}`);
     next();
 });
 
