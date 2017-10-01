@@ -1,4 +1,5 @@
 var parasiteData = require("./parasites.js");
+const replace = require("replace");
 
 var hostData = [
     {
@@ -18,7 +19,7 @@ var hostData = [
         ],
         "match": parasiteData[2].name,
         "testimonial": `I don't really like surprises, so I wanted a mild parasite that would stick with me without disrupting my life too much. ${parasiteData[2].name} gave me just that. I'm getting dewormed soon, so we might not go the distance, but this has been not terrible. Thanks, ParasiteFinder!`
-    }
+    }//replace
 ]
 
 module.exports = hostData;
