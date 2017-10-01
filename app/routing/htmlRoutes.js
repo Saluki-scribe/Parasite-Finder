@@ -3,6 +3,7 @@
 var path = require("path");
 var express = require("express");
 var hostData = require("../data/hosts.js");
+var parasiteData = require("../data/parasites.js");
 var bodyParser = require("body-parser");
 const fs = require("fs");
 const replace = require("replace");

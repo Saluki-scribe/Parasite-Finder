@@ -1,3 +1,5 @@
+var hostData = require("./hosts.js");
+
 var parasiteData = [
     {
         "name": "Human Botfly",
