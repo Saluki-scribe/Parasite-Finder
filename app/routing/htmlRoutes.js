@@ -10,42 +10,35 @@ const replace = require("replace");
 
 var app = express();
 
-module.exports = function(app) {
+//server.js will run this code
 
-    //app.use(bodyParser.urlencoded({ extended: false}));
-    //app.use(bodyParser.json());
-    //Routes displaying home page and survey page for user request
+module.exports = function(app) {
     
+//Send static 'assets' folder files used by the html files to the server
+
    app.use(express.static('./app/assets'));
-    
+
+//Display survey.html when user requests endpoint '/survey'
+
     app.get("/survey", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
+//Add user's data and survey answers to hosts.js when user clicks "submit" button
+
    app.post("/survey", function(req, res) {
 
-    replace({
-        regex: "//replace",
-        replacement: ", \n" + JSON.stringify(req.body) + "//replace",
-        paths: ["app/data/hosts.js"],
-        recursive: true,
-        silent: true,
+        replace({
+            regex: "//replace",
+            replacement: ", \n" + JSON.stringify(req.body) + "//replace",
+            paths: ["app/data/hosts.js"],
+            recursive: true,
+            silent: true,
+        });
+
     });
 
-    //hostData.push(req.body);
-
-       /* fs.appendFile('app/data/hosts.js', JSON.stringify(req.body), function(err) {
-
-            if (err) {
-                console.log(err);
-            } else {
-                console.log(`req.body contents: ${JSON.stringify(req.body)}`);
-                console.log("File updated");
-                console.log(`Updated File Contents: ${JSON.stringify(hostData)}`);
-                
-            };
-        });*/
-    });
+//If user types any endpoint that's not "/survey", send user to the home page
     
     app.get("*", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
