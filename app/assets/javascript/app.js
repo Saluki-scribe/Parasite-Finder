@@ -4,10 +4,16 @@ $(document).ready(function(){
     event.preventDefault();
 
     var testArray = [];
-    var e = $("#q1").val();
+for (i = 1; i <= 2; i++) {
+
+    var e = $("#q" + i).val();
     e = parseInt(e);
     testArray.push(e);
-    console.log(testArray);
+
+}
+
+console.log(testArray);
+
 
 
     var newHost = {
