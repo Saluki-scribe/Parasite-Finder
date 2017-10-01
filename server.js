@@ -15,8 +15,6 @@ app.use(function(req, res, next) {
     next();
 });
 
-//app.use(express.static('assets'));
-
 //Parse posted data
 
 app.use(bodyParser.urlencoded({ extended: false}));
