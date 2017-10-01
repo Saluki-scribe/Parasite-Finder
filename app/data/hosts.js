@@ -3,7 +3,7 @@ var parasiteData = require("./parasites.js");
 var hostData = [
     {
         "name": "Hilda",
-        "photo": "https://unsplash.com/photos/V_xncvgzDoo",
+        "photo": "",
         "scores": [
             5,
             5,
