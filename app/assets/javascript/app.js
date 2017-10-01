@@ -1,38 +1,41 @@
 $(document).ready(function(){
-   
-    $(".submit").on("click", function(event) {
-        event.preventDefault();
-  
-        // Here we grab the form elements
-        var newHost = {
-          hostName: $("#host-name").val().trim(),
-          hostPhoto: $("#host-photo").val().trim(),
-          hostArray: $("#host-array").val().trim()
-        };
-  
-        console.log(newHost);
 
-        $.post("/api/tables", newHost,
-        function(data) {
+//When user submits survey, collect data in a new host object and store in hosts.js array via POST
 
-          // If a table is available... tell user they are booked.
-          if (data) {
-            alert("Yay! You are officially booked!");
-          }
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
 
-          // If a table is available... tell user they on the waiting list.
-          else {
-            alert("Sorry you are on the wait list");
-          }
+//Hold user's answers for each of the 10 questions
 
-          // Clear the form when submitting
+    var scores = [];
 
-          $("#host-name").val("");
-          $("#host-photo").val("");
-          $("#host-array").val("");
+for (i = 1; i <= 10; i++) {
 
-        });
-    });
-    
+    var e = $("#q" + i).val();
+    e = parseInt(e);
+    scores.push(e);
 
-});
+}
+
+//Create a new host object with user's submitted information and survey answers
+
+    var newHost = {
+      name: $("#host-name").val().trim(),
+      photo: $("#host-photo").val().trim(),
+      scores
+    };
+
+    console.log(newHost);
+
+    $.post('/survey', newHost);
+      
+
+// Clear the form when submitting
+
+    $("#host-name").val("");
+    $("#host-photo").val("");
+    $("select[id^='q']").val(0);
+
+  }); //End on click event
+
+}); //End document ready function
