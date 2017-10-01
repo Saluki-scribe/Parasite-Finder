@@ -1,7 +1,35 @@
 $(document).ready(function(){
-   
-    $(".submit").on("click", function(event) {
+
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
+
+    var testArray = [];
+    var e = $("#q1").val();
+    e = parseInt(e);
+    testArray.push(e);
+    console.log(testArray);
+
+
+    var newHost = {
+      hostName: $("#host-name").val().trim(),
+      hostPhoto: $("#host-photo").val().trim(),
+      testArray
+    };
+
+    console.log(newHost);
+
+
+  });
+
+//  for (var i = 1; i < 2; i++) {
+
+//  }
+
+/*
+    $("#submit").on("click", function(event) {
         event.preventDefault();
+
+
   
         // Here we grab the form elements
         var newHost = {
@@ -34,5 +62,5 @@ $(document).ready(function(){
         });
     });
     
-
+*/
 });
