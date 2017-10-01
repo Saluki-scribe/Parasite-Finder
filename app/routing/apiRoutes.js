@@ -13,9 +13,10 @@ module.exports = function(app) {
 
 //Send posted information from survey results to the hostData array
 
-    app.post("/api/survey", function(req, res) {
+    /*app.post("/survey", function(req, res) {
         hostData.push(req.body);
-        res.json(hostData);
+        //res.json(hostData);
+        console.log(hostData);
     });
-
+*/
 };

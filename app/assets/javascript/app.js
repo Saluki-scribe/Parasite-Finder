@@ -1,72 +1,41 @@
 $(document).ready(function(){
 
+//When user submits survey, collect data in a new host object and store in hosts.js array via POST
+
   $("#submit").on("click", function(event) {
     event.preventDefault();
 
-    var testArray = [];
-for (i = 1; i <= 2; i++) {
+//Hold user's answers for each of the 10 questions
+
+    var scores = [];
+
+for (i = 1; i <= 10; i++) {
 
     var e = $("#q" + i).val();
     e = parseInt(e);
-    testArray.push(e);
+    scores.push(e);
 
 }
 
-console.log(testArray);
-
-
+//Create a new host object with user's submitted information and survey answers
 
     var newHost = {
-      hostName: $("#host-name").val().trim(),
-      hostPhoto: $("#host-photo").val().trim(),
-      testArray
+      name: $("#host-name").val().trim(),
+      photo: $("#host-photo").val().trim(),
+      scores
     };
 
     console.log(newHost);
 
+    $.post('/survey', newHost);
+      
 
-  });
+// Clear the form when submitting
 
-//  for (var i = 1; i < 2; i++) {
+    $("#host-name").val("");
+    $("#host-photo").val("");
+    $("select[id^='q']").val(0);
 
-//  }
+  }); //End on click event
 
-/*
-    $("#submit").on("click", function(event) {
-        event.preventDefault();
-
-
-  
-        // Here we grab the form elements
-        var newHost = {
-          hostName: $("#host-name").val().trim(),
-          hostPhoto: $("#host-photo").val().trim(),
-          hostArray: $("#host-array").val().trim()
-        };
-  
-        console.log(newHost);
-
-        $.post("/api/tables", newHost,
-        function(data) {
-
-          // If a table is available... tell user they are booked.
-          if (data) {
-            alert("Yay! You are officially booked!");
-          }
-
-          // If a table is available... tell user they on the waiting list.
-          else {
-            alert("Sorry you are on the wait list");
-          }
-
-          // Clear the form when submitting
-
-          $("#host-name").val("");
-          $("#host-photo").val("");
-          $("#host-array").val("");
-
-        });
-    });
-    
-*/
-});
+}); //End document ready function

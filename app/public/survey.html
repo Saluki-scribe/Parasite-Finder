@@ -17,10 +17,12 @@
     
     <div id = "info-div">
         <h2>About You</h2>
-        <h3>Name (Required)</h3>
-        <input type="text" name id = "host-name" class="form-control" required>
-        <h3>Link to Photo Image (Required)</h3>
-        <input type = "text" name id = "host-photo" class = "form-control" required>
+        <!--<form action="/survey" method="post">-->
+            <h3>Name (Required)</h3>
+            <input type="text" name id = "host-name" class="form-control" required>
+            <h3>Link to Photo Image (Required)</h3>
+            <input type = "text" name id = "host-photo" class = "form-control" required>
+        <!--</form>-->
         <br><br>
         <hr>
     </div> <!--End info div-->
@@ -50,7 +52,103 @@
         </select>
         <br><br>
 
-        <button type="submit" id="submit">Submit</button>
+        <h2>Question 3</h2>
+        <h5>"I’m a cat person."</h5>
+        <select id="q3">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 4</h2>
+        <h5>"I’m comfortable with a partner who will challenge and even change my viewpoints."</h5>
+        <select id="q4">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 5</h2>
+        <h5>"I want a partner who’s taller than me"</h5>
+        <select id="q5">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 6</h2>
+        <h5>"I’m pretty traditional."</h5>
+        <select id="q6">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 7</h2>
+        <h5>"I want a partner who’s eager to travel and try new things."</h5>
+        <select id="q7">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 8</h2>
+        <h5>"I'd prefer to have a partner who takes charge."</h5>
+        <select id="q8">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 9</h2>
+        <h5>"I’m looking for a long-term relationship."</h5>
+        <select id="q9">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h2>Question 10</h2>
+        <h5>"I don’t like having a tongue. I want something more interesting."</h5>
+        <select id="q10">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <button type="submit" id="submit" method = "post">Submit</button>
 
     <!--Create modal, triggered by "submit" button-->
 

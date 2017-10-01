@@ -4,21 +4,23 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
+var hostData = require("./app/data/hosts.js");
+
+
 var app = express();
 var PORT = 8080;
-
-//Serve static files located in assets folder
-
-app.use(function(req, res, next) {
-
-    console.log(`${req.method} request for '${req.url}' -${JSON.stringify(req.body)}`);
-    next();
-});
 
 //Parse posted data
 
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
+
+app.use(function(req, res, next) {
+    
+    console.log(`\n\n${req.method} request for '${req.url}' -${JSON.stringify(req.body)}\n\n Current hostData: ${JSON.stringify(hostData)}`);
+    
+    next();
+});
 
 //Add exported routes for htmlRoutes and apiRoutes
 
