@@ -13,7 +13,8 @@ module.exports = function(app) {
 
 //Send posted information from survey results to the hostData array
 
-    app.post("/api/parasites", function(req, res) {
+    app.post("/api/survey", function(req, res) {
+        hostData.push(req.body);
         res.json(hostData);
     });
 
