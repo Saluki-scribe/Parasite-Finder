@@ -94,7 +94,8 @@ module.exports = function(app) {
             };
             
             count += 1;
-        }; //End for loop
+        }; //End for loop      
+        
     }); //End app.post function
 
 //If user types any endpoint that's not "/survey", send user to the home page
