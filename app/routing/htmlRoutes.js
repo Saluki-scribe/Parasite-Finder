@@ -33,7 +33,7 @@ module.exports = function(app) {
 
 //Add user's data and survey answers to hosts.js when user clicks "submit" button
 
-   app.post("/survey", function(req, res) {
+   app.post("/survey/api", function(req, res) {
 
     //var closestMatch;
 
@@ -65,6 +65,7 @@ module.exports = function(app) {
                     diff = Math.abs(currentResults[j] - parasiteData[count].results[j]);
                     sumDiffArray.push(diff);
                 }; //End inner for loop
+
                 console.log(sumDiffArray);
                 
                 function getSum (total, num) {
@@ -74,6 +75,7 @@ module.exports = function(app) {
                 var getFinal = function () {
                     return sumDiffArray.reduce(getSum, 0);
                 }
+
                 console.log("getFinal = " + getFinal());
                 
                 var currentDiff = getFinal();
