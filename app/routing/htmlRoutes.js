@@ -39,7 +39,7 @@ module.exports = function(app) {
             silent: true,
         });
 
-        var test = hostData[1].results;
+        var test = req.body["results[]"];
         console.log("Pulled from hostData's results: " + test);
 
         /*for (var i = 0; i <= 10; i++) {

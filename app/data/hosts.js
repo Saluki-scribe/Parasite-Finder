@@ -40,7 +40,11 @@ var hostData = [
 {"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN"]}, 
 {"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN"]}, 
 {"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","3","NaN","NaN","NaN","NaN","NaN"]}, 
-{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","1","NaN"]}//replace
+{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","1","NaN"]}, 
+{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","5","NaN","NaN","NaN","NaN"],"test[]":["1","2","3"],"test2":"Hello"}, 
+{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","2","NaN","NaN","NaN"]}, 
+{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","2","NaN","NaN","NaN"]}, 
+{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","4","NaN","NaN","NaN"]}//replace
 ]
 
 module.exports = hostData;
