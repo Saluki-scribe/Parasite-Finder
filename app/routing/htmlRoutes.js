@@ -15,6 +15,7 @@ var app = express();
 var currentMatch = [];
 var diff;
 var currentDiff;
+var currentMatch = 0;
 var sumDiffArray = [];
 //server.js will run this code
 
@@ -56,7 +57,6 @@ module.exports = function(app) {
             console.log("Outer for loop runs");
             
             
-            
             if (count <= 5) {
                 
                 for (var j = 0; j < 10; j++) {
@@ -76,12 +76,23 @@ module.exports = function(app) {
                 }
                 console.log("getFinal = " + getFinal());
                 
+                var currentDiff = getFinal();
+                sumDiffArray = [];
+
+                if (currentDiff < currentMatch || currentMatch == 0 ) {
+                    currentMatch = currentDiff;
+                    chosenParasite = parasiteData[count].name;
+                    console.log("currentDiff = " + currentDiff);
+                    console.log("currentMatch = " + currentMatch);
+                    console.log("You currently belong with " + chosenParasite);
+                } else {
+                    console.log("currentDiff = " + currentDiff);
+                    console.log("currentMatch = " + currentMatch);
+                    console.log("You currently belong with " + chosenParasite);                    
+                }
+
             };
             
-                /*if (closestMatch > newScore) {
-                    match = newScore
-                };*/    
-                    
             count += 1;
         }; //End for loop
     }); //End app.post function
