@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 app.use(function(req, res, next) {
     
-    console.log(`\n\n${req.method} request for '${req.url}' -${JSON.stringify(req.body)}\n\n Current hostData: ${JSON.stringify(hostData)}`);
+    console.log(`\n\n${req.method} request for '${req.url}' -${JSON.stringify(req.body)}`);
     
     next();
 });

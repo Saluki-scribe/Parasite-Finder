@@ -20,9 +20,9 @@ for (var i = 1; i <= 10; i++) {
 //Create a new host object with user's submitted information and survey answers
 
     var newHost = {
-      name: $("#host-name").val().trim(),
-      photo: $("#host-photo").val().trim(),
-      scores
+      "name": $("#host-name").val().trim(),
+      "photo": $("#host-photo").val().trim(),
+      "results": scores
     };
 
     console.log(newHost);

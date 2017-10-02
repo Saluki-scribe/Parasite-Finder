@@ -4,7 +4,7 @@ var parasiteData = [
     {
         "name": "Human Botfly",
         "photo": "",
-        "scores": [
+        "results": [
             5,
             5,
             2,
@@ -20,7 +20,7 @@ var parasiteData = [
     {
         "name": "T. gondii",
         "photo": "",
-        "scores": [
+        "results": [
             3,
             1,
             5,
@@ -37,7 +37,7 @@ var parasiteData = [
     {
         "name": "Tapeworm",
         "photo": "",
-        "scores": [
+        "results": [
             4,
             2,
             4,
@@ -53,7 +53,7 @@ var parasiteData = [
     {
         "name": "Lancet Liver Fluke",
         "photo": "",
-        "scores": [
+        "results": [
             2,
             2,
             1,
@@ -69,7 +69,7 @@ var parasiteData = [
     {
         "name": "Tongue-eating Louse",
         "photo": "",
-        "scores": [
+        "results": [
             1,
             4,
             1,
