@@ -36,6 +36,9 @@ for (var i = 1; i <= 10; i++) {
     $("#host-photo").val("");
     $("select[id^='q']").val(0);
 
+
+
+    
   }); //End on click event
 
 }); //End document ready function

@@ -78,6 +78,9 @@ var hostData = [
 {"name":"","photo":"","results[]":["4","2","5","1","5","3","5","2","3","4"]}, 
 {"name":"","photo":"","results[]":["4","2","5","1","5","3","5","2","3","4"]}, 
 {"name":"","photo":"","results[]":["1","4","3","1","3","5","3","4","1","5"]}, 
+{"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN"]}, 
+{"name":"Testy","photo":"google.com","results[]":["1","1","4","3","2","2","1","1","1","1"]}, 
+{"name":"Testy","photo":"google.com","results[]":["1","1","4","3","2","2","1","1","1","1"]}, 
 {"name":"","photo":"","results[]":["NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN","NaN"]}//replace
 ]
 
