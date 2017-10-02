@@ -11,6 +11,11 @@ const replace = require("replace");
 
 var app = express();
 
+//LOOP COMPARISON VARIABLES
+var currentMatch = [];
+var diff;
+var currentDiff;
+var sumDiffArray = [];
 //server.js will run this code
 
 module.exports = function(app) {
@@ -39,17 +44,47 @@ module.exports = function(app) {
             silent: true,
         });
 
-        var test = req.body["results[]"];
-        console.log("Pulled from hostData's results: " + test);
+        var currentResults = req.body["results[]"];
+        //var numTest = test.map(function(x) {
+        //    return parseInt(x);
+        //});
+        console.log("Pulled from hostData's results: " + currentResults);
 
-        /*for (var i = 0; i <= 10; i++) {
-
-            if (closestMatch > newScore) {
-                match = newScore
+        var count = 0;
+        
+        for (var i = 0; i <= 2; i++) {
+            console.log("Outer for loop runs");
+            
+            
+            
+            if (count <= 5) {
+                
+                for (var j = 0; j < 10; j++) {
+                    
+                    console.log("Inner for loop runs");
+                    diff = Math.abs(currentResults[j] - parasiteData[count].results[j]);
+                    sumDiffArray.push(diff);
+                }; //End inner for loop
+                console.log(sumDiffArray);
+                
+                function getSum (total, num) {
+                    return total + num;
+                }
+                
+                var getFinal = function () {
+                    return sumDiffArray.reduce(getSum, 0);
+                }
+                console.log("getFinal = " + getFinal());
+                
             };
-        }
-*/
-    });
+            
+                /*if (closestMatch > newScore) {
+                    match = newScore
+                };*/    
+                    
+            count += 1;
+        }; //End for loop
+    }); //End app.post function
 
 //If user types any endpoint that's not "/survey", send user to the home page
     
