@@ -29,6 +29,8 @@ module.exports = function(app) {
 
    app.post("/survey", function(req, res) {
 
+    //var closestMatch;
+
         replace({
             regex: "//replace",
             replacement: ", \n" + JSON.stringify(req.body) + "//replace",
@@ -37,6 +39,16 @@ module.exports = function(app) {
             silent: true,
         });
 
+        var test = hostData[1].results;
+        console.log("Pulled from hostData's results: " + test);
+
+        /*for (var i = 0; i <= 10; i++) {
+
+            if (closestMatch > newScore) {
+                match = newScore
+            };
+        }
+*/
     });
 
 //If user types any endpoint that's not "/survey", send user to the home page
