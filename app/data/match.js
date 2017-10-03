@@ -1,1 +1,1 @@
-var matchData = [{"name":"Tongue-eating Louse","photo":"https://i.imgur.com/2pKNiqm.jpg","results":[1,4,1,3,3,1,1,1,5,5]}]; module.exports = matchData;
+var matchData = [{"name":"Tapeworm","photo":"https://upload.wikimedia.org/wikipedia/commons/e/e2/Taenia_saginata_adult_5260_lores.jpg","results":[4,2,4,1,5,5,1,1,5,1]}]; module.exports = matchData;

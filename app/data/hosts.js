@@ -61,7 +61,12 @@ var hostData = [
 {"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
 {"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
 {"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
-{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}//replace
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["5","5","2","1","2","3","4","3","2","2"]}, 
+{"name":"Tara","photo":"google.com","results[]":["5","5","2","1","2","3","4","3","2","3"]}, 
+{"name":"Tara","photo":"google.com","results[]":["5","5","2","1","2","3","4","3","2","3"]}, 
+{"name":"Tara","photo":"Test","results[]":["4","2","4","1","5","5","1","1","5","1"]}, 
+{"name":"T","photo":"T","results[]":["1","1","1","1","1","1","1","1","1","1"]}//replace
 ]
 
 module.exports = hostData;

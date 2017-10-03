@@ -10,7 +10,7 @@ const fs = require("fs");
 var currentMatch = [];
 var diff;
 var currentDiff;
-var currentMatch = 0;
+var currentMatch = 100;
 var sumDiffArray = [];
 var chosenParasite;
 var chosenParasitePic;
@@ -77,7 +77,7 @@ module.exports = function(app) {
             var currentDiff = getFinal();
             sumDiffArray = [];
 
-            if (currentDiff < currentMatch || currentMatch == 0 ) {
+            if (currentDiff < currentMatch || currentMatch == 100 ) {
                 currentMatch = currentDiff;
                 chosenParasite = parasiteData[count];
                 chosenParasitePic = parasiteData[count].photo;
