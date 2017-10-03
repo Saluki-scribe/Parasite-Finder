@@ -1,1 +1,1 @@
-var matchData = [{"name":"Tapeworm","photo":"https://upload.wikimedia.org/wikipedia/commons/e/e2/Taenia_saginata_adult_5260_lores.jpg","results":[4,2,4,1,5,5,1,1,5,1]}]; module.exports = matchData;
+var matchData = [{"name":"Human Botfly","photo":"https://upload.wikimedia.org/wikipedia/en/2/23/D._hominis_larva.png","results":[5,5,2,1,2,3,4,3,2,2]}]; module.exports = matchData;
