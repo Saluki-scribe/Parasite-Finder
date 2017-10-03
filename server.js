@@ -1,14 +1,14 @@
 //Require dependences
 
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require("path");
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 
 var hostData = require("./app/data/hosts.js");
 
 
 var app = express();
-var PORT = 8080;
+var PORT = process.env.PORT || 3000;;
 
 //Parse posted data
 
