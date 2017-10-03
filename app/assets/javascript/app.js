@@ -29,6 +29,13 @@ for (var i = 1; i <= 10; i++) {
 
     $.post('/survey', newHost);
 
+    
+
+    $.getJSON("/api/parasites", function(result) {
+        console.log("Here's what we grabbed: " + result[0]);
+        alert("Your match is " + result[0].name);                
+    });
+
 //Next, retrieve the match result data from the back end server with an ajax call. 
 
 //After that, display that match data on the survey.html page with a pop up modal.

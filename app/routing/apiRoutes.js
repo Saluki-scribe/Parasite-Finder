@@ -3,7 +3,7 @@
 var parasiteData = require("../data/parasites.js");
 var hostData = require("../data/hosts.js");
 const replace = require("replace");
-
+const fs = require("fs");
 
 //LOOP COMPARISON VARIABLES
 var currentMatch = [];
@@ -24,8 +24,11 @@ module.exports = function(app) {
         res.json(parasiteData);
     });
 
-//Send posted information from survey results to the hostData array
+//Send parasite object that is user's chosen match to endpoint 'survey/results'
 
+    app.get("/survey/results", function(req, res) {
+        res.json(matchData);
+    });
     
 //Add user's data and survey answers to hosts.js when user clicks "submit" button
 
@@ -75,7 +78,7 @@ module.exports = function(app) {
 
             if (currentDiff < currentMatch || currentMatch == 0 ) {
                 currentMatch = currentDiff;
-                chosenParasite = parasiteData[count].name;
+                chosenParasite = parasiteData[count];
                 chosenParasitePic = parasiteData[count].photo;
                 console.log("currentDiff = " + currentDiff);
                 console.log("currentMatch = " + currentMatch);
@@ -92,9 +95,23 @@ module.exports = function(app) {
 
         }; //End for loop      
         
-        console.log("We got the current match for you right here: " + chosenParasite + ". Here's a link to its photo: " + chosenParasitePic);
+        console.log("We got the current match for you right here: " + chosenParasite.name + ". Here's a link to its photo: " + chosenParasitePic);
 
+        //Return the user's match as a JSON object. 
 
+        var content = JSON.stringify(chosenParasite);
+        
+        fs.writeFile("app/data/match.json", content, 'utf8', function (err) {
+            if (err) {
+                return console.log(err);
+            }
+        
+            console.log("The file was saved!");
+        }); 
+
+        //app.get("/api/parasites", function(req, res) {
+        //    res.json(parasiteData);
+        //});
 
     }); //End app.post function
 
