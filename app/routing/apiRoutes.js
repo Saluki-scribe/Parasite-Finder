@@ -48,16 +48,14 @@ module.exports = function(app) {
         var count = 0;
         
         for (var i = 0; i <= 4; i++) {
-            
-            console.log("Outer for loop runs");
-            
+                        
             if (count <= 5) {
                 
                 for (var j = 0; j < 10; j++) {
-                    
-                    console.log("Inner for loop runs");
+    
                     diff = Math.abs(currentResults[j] - parasiteData[count].results[j]);
                     sumDiffArray.push(diff);
+
                 }; //End inner for loop
 
             console.log(sumDiffArray);
@@ -81,11 +79,11 @@ module.exports = function(app) {
                 chosenParasitePic = parasiteData[count].photo;
                 console.log("currentDiff = " + currentDiff);
                 console.log("currentMatch = " + currentMatch);
-                console.log("You currently belong with " + chosenParasite);
+                console.log("You currently belong with " + chosenParasite + "\n");
             } else {
                 console.log("currentDiff = " + currentDiff);
                 console.log("currentMatch = " + currentMatch);
-                console.log("You currently belong with " + chosenParasite);                    
+                console.log("You currently belong with " + chosenParasite + "\n");                    
             }
 
         };
@@ -97,6 +95,9 @@ module.exports = function(app) {
         console.log("We got the current match for you right here: " + chosenParasite + ". Here's a link to its photo: " + chosenParasitePic);
 
 
+
     }); //End app.post function
 
-};
+    
+
+}; //Endo module.exports
