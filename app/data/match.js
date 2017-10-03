@@ -1,1 +1,1 @@
-var matchData = [{"name":"Human Botfly","photo":"https://upload.wikimedia.org/wikipedia/en/2/23/D._hominis_larva.png","results":[5,5,2,1,2,3,4,3,2,2]}]; module.exports = matchData;
+var matchData = [{"name":"Tongue-eating Louse","photo":"https://i.imgur.com/2pKNiqm.jpg","results":[1,4,1,3,3,1,1,1,5,5]}]; module.exports = matchData;

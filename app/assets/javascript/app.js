@@ -27,14 +27,18 @@ for (var i = 1; i <= 10; i++) {
 
     console.log(newHost);
 
-    $.post('/survey', newHost);
+    $.post('/survey', newHost, function(data) {
+        alert("Your match is " + data.name);
+    });
 
     
-
+    /*
     $.getJSON("/survey/results", function(result) {
         console.log("Here's what we grabbed: " + result[0]);
         alert("Your match is " + result[0].name);                
     });
+*/
+
 
 //Next, retrieve the match result data from the back end server with an ajax call. 
 

@@ -72,7 +72,9 @@ var hostData = [
 {"name":"","photo":"","results[]":["1","1","1","1","1","5","5","5","5","1"]}, 
 {"name":"Tara","photo":"Tara","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
 {"name":"Tara","photo":"Tara","results[]":["2","5","4","4","5","3","3","3","2","5"]}, 
-{"name":"Tara","photo":"Tara","results[]":["5","5","1","5","5","5","3","5","1","1"]}//replace
+{"name":"Tara","photo":"Tara","results[]":["5","5","1","5","5","5","3","5","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["3","2","1","1","2","4","3","5","3","3"]}, 
+{"name":"","photo":"","results[]":["1","1","1","1","1","1","1","1","1","1"]}//replace
 ]
 
 module.exports = hostData;

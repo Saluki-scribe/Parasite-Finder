@@ -109,9 +109,9 @@ module.exports = function(app) {
             console.log("The file was saved!");
         }); 
 
-        //app.get("/api/parasites", function(req, res) {
-        //    res.json(parasiteData);
-        //});
+        
+           res.json(chosenParasite);
+    
 
     }); //End app.post function
 
