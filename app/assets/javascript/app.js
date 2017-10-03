@@ -30,24 +30,8 @@ for (var i = 1; i <= 10; i++) {
     $.post('/survey', newHost, function(data) {
         alert("Your match is " + data.name);
     });
-
     
-    /*
-    $.getJSON("/survey/results", function(result) {
-        console.log("Here's what we grabbed: " + result[0]);
-        alert("Your match is " + result[0].name);                
-    });
-*/
-
-
-//Next, retrieve the match result data from the back end server with an ajax call. 
-
-//After that, display that match data on the survey.html page with a pop up modal.
-
-//DO THIS NEXT TO GET DATA BACK!!!!!!
-//$.get(api/hosts, function(data, status) {
-//  modal(data);
-//})
+//Display that match data with a pop up modal.
 
   }); //End on click event
 
