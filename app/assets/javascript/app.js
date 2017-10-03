@@ -28,11 +28,13 @@ for (var i = 1; i <= 10; i++) {
     console.log(newHost);
 
     $.post('/survey', newHost);
+//DO THIS NEXT TO GET DATA BACK!!!!!!
+//$.get(api/hosts, function(data, status) {
+//  modal(data);
+//})
 
 
-
-
-    
+    /*
     function runTableQuery() {
         
               // Here we get the location of the root page.
@@ -70,7 +72,10 @@ for (var i = 1; i <= 10; i++) {
             }
 
             runTableQuery();
+            
+        */
     
+
   }); //End on click event
 
 }); //End document ready function

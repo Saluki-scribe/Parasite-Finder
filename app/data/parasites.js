@@ -3,7 +3,7 @@ var hostData = require("./hosts.js");
 var parasiteData = [
     {
         "name": "Human Botfly",
-        "photo": "",
+        "photo": "https://upload.wikimedia.org/wikipedia/en/2/23/D._hominis_larva.png",
         "results": [
             5,
             5,
@@ -19,7 +19,7 @@ var parasiteData = [
     },
     {
         "name": "T. gondii",
-        "photo": "",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Toxoplasma_gondii.jpg/800px-Toxoplasma_gondii.jpg",
         "results": [
             3,
             1,
@@ -36,7 +36,7 @@ var parasiteData = [
     },
     {
         "name": "Tapeworm",
-        "photo": "",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Taenia_saginata_adult_5260_lores.jpg",
         "results": [
             4,
             2,
@@ -52,7 +52,7 @@ var parasiteData = [
     },
     {
         "name": "Lancet Liver Fluke",
-        "photo": "",
+        "photo": "http://www.reed.edu/biology/professors/srenn/pages/teaching/web_2010/GMKlancetliverfluke/images/LancetLiverFluke2.jpg",
         "results": [
             2,
             2,
@@ -68,7 +68,7 @@ var parasiteData = [
     },
     {
         "name": "Tongue-eating Louse",
-        "photo": "",
+        "photo": "https://i.imgur.com/2pKNiqm.jpg",
         "results": [
             1,
             4,
