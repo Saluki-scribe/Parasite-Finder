@@ -83,11 +83,11 @@ module.exports = function(app) {
                 chosenParasitePic = parasiteData[count].photo;
                 console.log("currentDiff = " + currentDiff);
                 console.log("currentMatch = " + currentMatch);
-                console.log("You currently belong with " + chosenParasite + "\n");
+                console.log("You currently belong with " + chosenParasite.name + "\n");
             } else {
                 console.log("currentDiff = " + currentDiff);
                 console.log("currentMatch = " + currentMatch);
-                console.log("You currently belong with " + chosenParasite + "\n");                    
+                console.log("You currently belong with " + chosenParasite.name + "\n");                    
             }
 
         };
@@ -101,7 +101,7 @@ module.exports = function(app) {
         //Return the user's match as a JSON object. 
        var content = JSON.stringify(chosenParasite);
         
-        fs.writeFile("app/data/match.js", "var matchData = [" + content + "] module.exports = matchData;", 'utf8', function (err) {
+        fs.writeFile("app/data/match.js", "var matchData = [" + content + "]; module.exports = matchData;", 'utf8', function (err) {
             if (err) {
                 return console.log(err);
             }

@@ -54,7 +54,14 @@ var hostData = [
 {"name":"T","photo":"T","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
 {"name":"T","photo":"T","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
 {"name":"T","photo":"T","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
-{"name":"T","photo":"T","results[]":["1","1","1","1","1","1","1","1","1","1"]}//replace
+{"name":"T","photo":"T","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","5","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}, 
+{"name":"Tara","photo":"google.com","results[]":["1","1","1","1","1","1","1","1","1","1"]}//replace
 ]
 
 module.exports = hostData;
