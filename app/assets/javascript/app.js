@@ -31,7 +31,7 @@ for (var i = 1; i <= 10; i++) {
 
     
 
-    $.getJSON("/api/parasites", function(result) {
+    $.getJSON("/survey/results", function(result) {
         console.log("Here's what we grabbed: " + result[0]);
         alert("Your match is " + result[0].name);                
     });

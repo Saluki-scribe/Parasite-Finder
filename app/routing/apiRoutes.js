@@ -2,6 +2,7 @@
 
 var parasiteData = require("../data/parasites.js");
 var hostData = require("../data/hosts.js");
+var matchData = require("../data/match.js");
 const replace = require("replace");
 const fs = require("fs");
 
@@ -98,10 +99,9 @@ module.exports = function(app) {
         console.log("We got the current match for you right here: " + chosenParasite.name + ". Here's a link to its photo: " + chosenParasitePic);
 
         //Return the user's match as a JSON object. 
-
-        var content = JSON.stringify(chosenParasite);
+       var content = JSON.stringify(chosenParasite);
         
-        fs.writeFile("app/data/match.json", content, 'utf8', function (err) {
+        fs.writeFile("app/data/match.js", "var matchData = [" + content + "] module.exports = matchData;", 'utf8', function (err) {
             if (err) {
                 return console.log(err);
             }

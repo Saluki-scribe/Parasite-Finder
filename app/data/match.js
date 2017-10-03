@@ -1,0 +1,1 @@
+var matchData = [{"name":"Tongue-eating Louse","photo":"https://i.imgur.com/2pKNiqm.jpg","results":[1,4,1,3,3,1,1,1,5,5]}] module.exports = matchData;
